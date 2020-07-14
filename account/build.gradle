@@ -11,9 +11,8 @@ android {
         targetSdkVersion this.rootProject.android.targetSdkVersionv
         versionCode this.rootProject.android.versionCode
         versionName this.rootProject.android.versionName
-
-        consumerProguardFiles 'consumer-rules.pro'
     }
+
 
     buildTypes {
         release {
@@ -29,5 +28,5 @@ dependencies {
     implementation this.rootProject.depsLibs["kotlin-stdlib-jdk7"]
     implementation this.rootProject.depsLibs.appcompat
     implementation this.rootProject.depsLibs["core-ktx"]
-    api this.rootProject.depsLibs.constraintlayout
+    api project(':ext')
 }

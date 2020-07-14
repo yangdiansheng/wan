@@ -1,7 +1,8 @@
 package com.yangdainsheng.wan
 
 import android.os.Bundle
-import com.yangdainsheng.UserManager
+import com.yangdainsheng.account.UserManager
+import com.yangdainsheng.login.LoginActivity
 import com.yangdainsheng.ui.BaseActivity
 
 class SplashActivity :BaseActivity(){

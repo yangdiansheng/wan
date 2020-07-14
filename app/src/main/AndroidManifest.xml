@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity android:name="com.yangdainsheng.login.LoginActivity"
             android:screenOrientation="fullSensor"/>
         <activity android:name=".MainActivity"
             android:screenOrientation="fullSensor"/>

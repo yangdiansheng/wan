@@ -28,6 +28,7 @@ dependencies {
     implementation this.rootProject.depsLibs["kotlin-stdlib-jdk7"]
     implementation this.rootProject.depsLibs.appcompat
     implementation this.rootProject.depsLibs["core-ktx"]
-    implementation this.rootProject.depsLibs.constraintlayout
     implementation project(':ui')
+    implementation project(':login')
+    implementation project(':account')
 }
