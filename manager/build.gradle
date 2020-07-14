@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
@@ -7,17 +7,25 @@ android {
     buildToolsVersion this.rootProject.android.buildToolsVersion
 
     defaultConfig {
-        applicationId this.rootProject.android.applicationId
         minSdkVersion this.rootProject.android.minSdkVersion
         targetSdkVersion this.rootProject.android.targetSdkVersionv
         versionCode this.rootProject.android.versionCode
         versionName this.rootProject.android.versionName
+
+        consumerProguardFiles 'consumer-rules.pro'
     }
+
+    def DEBUG = false
 
     buildTypes {
         release {
             minifyEnabled false
+            DEBUG = false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            DEBUG = true
         }
     }
 
@@ -28,10 +36,4 @@ dependencies {
     implementation this.rootProject.depsLibs["kotlin-stdlib-jdk7"]
     implementation this.rootProject.depsLibs.appcompat
     implementation this.rootProject.depsLibs["core-ktx"]
-    implementation this.rootProject.depsLibs.multidex
-    implementation this.rootProject.depsLibs.lifecycle
-    implementation project(':ui')
-    implementation project(':login')
-    implementation project(':account')
-    implementation project(':manager')
 }
