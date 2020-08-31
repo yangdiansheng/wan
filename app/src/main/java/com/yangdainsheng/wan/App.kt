@@ -4,7 +4,9 @@ import android.app.Application
 import android.content.ContextWrapper
 import androidx.lifecycle.ProcessLifecycleOwner
 import androidx.multidex.MultiDexApplication
+import com.yangdainsheng.event.MyEventBusIndex
 import com.yangdainsheng.manager.ProcessManager
+import org.greenrobot.eventbus.EventBus
 
 
 private lateinit var INSTANCE: Application
@@ -17,6 +19,7 @@ class App : MultiDexApplication() {
         super.onCreate()
         INSTANCE = this
         initAppListener()
+        EventBus.builder().addIndex(MyEventBusIndex()).build()
 
     }
 

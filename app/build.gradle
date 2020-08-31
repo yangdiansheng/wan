@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion this.rootProject.android.compileSdkVersion
@@ -20,7 +21,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+}
 
+kapt {
+    arguments {
+        arg('eventBusIndex', 'com.yangdainsheng.event.MyEventBusIndex')
+    }
 }
 
 dependencies {
@@ -31,6 +37,7 @@ dependencies {
     implementation this.rootProject.depsLibs.multidex
     implementation this.rootProject.depsLibs.lifecycle
     implementation this.rootProject.depsLibs.eventbus
+    kapt this.rootProject.depsLibs["eventbus-annotation-processor"]
     implementation project(':ui')
     implementation project(':login')
     implementation project(':account')
