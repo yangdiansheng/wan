@@ -30,6 +30,7 @@ dependencies {
     implementation this.rootProject.depsLibs["core-ktx"]
     implementation this.rootProject.depsLibs.multidex
     implementation this.rootProject.depsLibs.lifecycle
+    implementation this.rootProject.depsLibs.eventbus
     implementation project(':ui')
     implementation project(':login')
     implementation project(':account')

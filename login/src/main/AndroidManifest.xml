@@ -1,2 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yangdainsheng.login" />
+    package="com.yangdainsheng.login">
+    <application>
+
+        <activity android:name="com.yangdainsheng.login.LoginActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

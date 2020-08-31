@@ -18,11 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.yangdainsheng.login.LoginActivity"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
+
         <activity android:name=".MainActivity"
             android:screenOrientation="fullSensor"/>
+        <activity android:name="com.yangdainsheng.wan.EventTestActivity"
+            android:screenOrientation="fullSensor" />
     </application>
 
 </manifest>
