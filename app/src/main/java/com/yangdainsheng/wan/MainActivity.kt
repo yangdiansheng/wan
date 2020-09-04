@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.yangdainsheng.activity.EventTestActivity
+import com.yangdainsheng.activity.GlideTestActivity
 import com.yangdainsheng.event.EventPost
 import kotlinx.android.synthetic.main.activity_main.*
 import org.greenrobot.eventbus.EventBus
@@ -24,9 +26,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         EventBus.getDefault().register(this)
         btn_start_event_test.setOnClickListener {
-            val intent = Intent();
-            intent.setClass(this,EventTestActivity::class.java)
-            startActivity(intent)
+           EventTestActivity.start(this)
+        }
+        btn_start_glide_test.setOnClickListener {
+            GlideTestActivity.start(this)
         }
     }
 

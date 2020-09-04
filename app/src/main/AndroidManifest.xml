@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.yangdainsheng.wan">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:name=".App"
@@ -21,7 +23,9 @@
 
         <activity android:name=".MainActivity"
             android:screenOrientation="fullSensor"/>
-        <activity android:name="com.yangdainsheng.wan.EventTestActivity"
+        <activity android:name="com.yangdainsheng.activity.EventTestActivity"
+            android:screenOrientation="fullSensor" />
+        <activity android:name="com.yangdainsheng.activity.GlideTestActivity"
             android:screenOrientation="fullSensor" />
     </application>
 

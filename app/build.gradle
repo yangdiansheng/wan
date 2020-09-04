@@ -38,6 +38,8 @@ dependencies {
     implementation this.rootProject.depsLibs.lifecycle
     implementation this.rootProject.depsLibs.eventbus
     kapt this.rootProject.depsLibs["eventbus-annotation-processor"]
+    implementation this.rootProject.depsLibs.glide
+    kapt this.rootProject.depsLibs["glide-compiler"]
     implementation project(':ui')
     implementation project(':login')
     implementation project(':account')

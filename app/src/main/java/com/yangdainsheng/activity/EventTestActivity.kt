@@ -1,10 +1,11 @@
-package com.yangdainsheng.wan
+package com.yangdainsheng.activity
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.yangdainsheng.event.EventPost
+import com.yangdainsheng.wan.R
 import kotlinx.android.synthetic.main.activity_event_test.*
 import org.greenrobot.eventbus.EventBus
 
