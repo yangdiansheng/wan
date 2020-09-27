@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.yangdainsheng.activity.EventTestActivity
 import com.yangdainsheng.activity.GlideTestActivity
+import com.yangdainsheng.activity.PicassoTestActivity
 import com.yangdainsheng.event.EventPost
 import kotlinx.android.synthetic.main.activity_main.*
 import org.greenrobot.eventbus.EventBus
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_start_glide_test.setOnClickListener {
             GlideTestActivity.start(this)
+        }
+        btn_start_picasso_test.setOnClickListener {
+            PicassoTestActivity.start(this)
         }
     }
 

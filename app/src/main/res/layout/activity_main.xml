@@ -19,6 +19,12 @@
         android:layout_height="45dp"
         android:text="点击进入glide test"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start_picasso_test"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="点击进入picasso test"/>
+
     <TextView
         android:id="@+id/tv_main_content"
         android:layout_width="wrap_content"
