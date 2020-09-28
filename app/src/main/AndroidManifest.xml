@@ -29,6 +29,8 @@
             android:screenOrientation="fullSensor" />
         <activity android:name="com.yangdainsheng.activity.PicassoTestActivity"
             android:screenOrientation="fullSensor" />
+        <activity android:name="com.yangdainsheng.activity.FrescoTestActivity"
+            android:screenOrientation="fullSensor" />
     </application>
 
 </manifest>

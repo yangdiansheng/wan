@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.yangdainsheng.activity.EventTestActivity
+import com.yangdainsheng.activity.FrescoTestActivity
 import com.yangdainsheng.activity.GlideTestActivity
 import com.yangdainsheng.activity.PicassoTestActivity
 import com.yangdainsheng.event.EventPost
@@ -35,6 +36,10 @@ class MainActivity : AppCompatActivity() {
         btn_start_picasso_test.setOnClickListener {
             PicassoTestActivity.start(this)
         }
+        btn_start_fresico_test.setOnClickListener {
+            FrescoTestActivity.start(this)
+        }
+
     }
 
     override fun onDestroy() {

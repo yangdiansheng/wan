@@ -41,6 +41,7 @@ dependencies {
     implementation this.rootProject.depsLibs.glide
     kapt this.rootProject.depsLibs["glide-compiler"]
     implementation this.rootProject.depsLibs.picasso
+    implementation this.rootProject.depsLibs.fresco
     implementation project(':ui')
     implementation project(':login')
     implementation project(':account')

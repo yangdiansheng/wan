@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.ContextWrapper
 import androidx.lifecycle.ProcessLifecycleOwner
 import androidx.multidex.MultiDexApplication
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.yangdainsheng.event.MyEventBusIndex
 import com.yangdainsheng.manager.ProcessManager
 import org.greenrobot.eventbus.EventBus
@@ -20,6 +21,7 @@ class App : MultiDexApplication() {
         INSTANCE = this
         initAppListener()
         EventBus.builder().addIndex(MyEventBusIndex()).build()
+        Fresco.initialize(this)
 
     }
 
