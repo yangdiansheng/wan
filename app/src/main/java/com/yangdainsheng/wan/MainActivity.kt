@@ -39,6 +39,9 @@ class MainActivity : AppCompatActivity() {
         btn_start_lifecycle_test.setOnClickListener {
             LifecycleTestActivity.start(this)
         }
+        btn_start_view_model_test.setOnClickListener {
+            ViewModelTestActivity.start(this)
+        }
 
     }
 
