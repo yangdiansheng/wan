@@ -4,10 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.yangdainsheng.activity.EventTestActivity
-import com.yangdainsheng.activity.FrescoTestActivity
-import com.yangdainsheng.activity.GlideTestActivity
-import com.yangdainsheng.activity.PicassoTestActivity
+import com.yangdainsheng.activity.*
 import com.yangdainsheng.event.EventPost
 import kotlinx.android.synthetic.main.activity_main.*
 import org.greenrobot.eventbus.EventBus
@@ -38,6 +35,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_start_fresico_test.setOnClickListener {
             FrescoTestActivity.start(this)
+        }
+        btn_start_lifecycle_test.setOnClickListener {
+            LifecycleTestActivity.start(this)
         }
 
     }

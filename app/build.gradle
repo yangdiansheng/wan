@@ -7,6 +7,16 @@ android {
     compileSdkVersion this.rootProject.android.compileSdkVersion
     buildToolsVersion this.rootProject.android.buildToolsVersion
 
+    compileOptions {
+        //指定java sdk版本为 1.8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions{
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
     defaultConfig {
         applicationId this.rootProject.android.applicationId
         minSdkVersion this.rootProject.android.minSdkVersion
@@ -21,6 +31,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 kapt {
@@ -42,6 +53,7 @@ dependencies {
     kapt this.rootProject.depsLibs["glide-compiler"]
     implementation this.rootProject.depsLibs.picasso
     implementation this.rootProject.depsLibs.fresco
+    implementation this.rootProject.depsLibs["fragment-ktx"]
     implementation project(':ui')
     implementation project(':login')
     implementation project(':account')

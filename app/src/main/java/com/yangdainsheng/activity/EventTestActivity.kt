@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.yangdainsheng.event.EventPost
+import com.yangdainsheng.mvp.LifeCycleMvp
 import com.yangdainsheng.wan.R
 import kotlinx.android.synthetic.main.activity_event_test.*
 import org.greenrobot.eventbus.EventBus
@@ -19,13 +20,13 @@ class EventTestActivity : AppCompatActivity() {
         }
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_event_test)
         tv_event_post.setOnClickListener {
             EventBus.getDefault().post(EventPost("from event Test"))
         }
-
     }
 
     override fun onDestroy() {
