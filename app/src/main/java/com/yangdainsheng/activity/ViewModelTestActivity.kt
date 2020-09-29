@@ -22,6 +22,11 @@ class ViewModelTestActivity : AppCompatActivity(){
         }
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        model.saveUser()
+    }
+
     private val model:MyViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {

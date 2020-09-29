@@ -33,8 +33,7 @@
             android:screenOrientation="fullSensor" />
         <activity android:name="com.yangdainsheng.activity.LifecycleTestActivity"
             android:screenOrientation="fullSensor" />
-        <activity android:name="com.yangdainsheng.activity.ViewModelTestActivity"
-            android:screenOrientation="fullSensor" />
+        <activity android:name="com.yangdainsheng.activity.ViewModelTestActivity" />
     </application>
 
 </manifest>
